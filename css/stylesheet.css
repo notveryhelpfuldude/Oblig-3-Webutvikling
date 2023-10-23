@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+}
+h1 {    
+    color: #333333;
+    text-align: center;
+}
+h2 {
+    color:#333333;
+    font-size: 48px;
+}
+.flex-container {
+    width: 100%;
+    display: flex;
+    background-color: #333333;
+
+}
+.flex2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;  
+}
+.flex-container > article {
+    background-color: #D9D9D9;
+    margin: 30px;
+    padding: 10px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 33%;
+}
+.column {
+    flex: 32%;
+    margin:5px;
+}
+.col2 {
+    flex: 50%;
+}
+.col3 {
+    flex: 100%;
+}
+.col4 {
+    flex:66%;
+}
+.col5 {
+    width: 20%;
+    margin: 5px;
+}
+[class*="pal"] {
+    border-color: #333333;
+    border-style: dashed;
+    height: 100px;
+    width: 100%;
+}
+.sizec {
+    background-color:#a8a4a4;
+    height:50px;
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0,0,0,0.24);
+    /* Box shadow Hentet fra W3schools.com*/
+}
+.sizec h3 {
+    padding: 10px;
+}
+.palgrey {
+    background-color: gray;
+}
+.palblue {
+    background-color: cyan;
+}
+.palred {
+    background-color: indianred;
+}
+.palbeige {
+    background-color:beige;
+}
+.ptag {
+    background-color: #a8a4a4;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+}
+.addcart {
+  width: 50%;  
+}
+.addcart article{
+    background-color: steelblue;
+    height: 100px;
+    width: 100%;
+    padding: 1px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0,0,0,0.24);
+    /* Box shadow Hentet fra W3schools.com*/
+}
+.carte article {
+    width: 50%;
+    font-size: 72px;
+}
+.cartc {
+    display: flex;
+    background-color: #a8a4a4;
+    border-style: groove;
+    width: 100%;
+    align-items: center;
+    margin: 10px;
+}
+.cartc article {
+    width: 33%;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+}
+img {
+    width:100%;
+}
+.border {
+    margin-top: auto;
+    float: left;
+    width: 5%;
+    height: 1100px;
+    background-color: #B87333;
+}
+nav {
+    float:left;
+    width: 20%;
+    height: 1000px;
+    background-color:#D2B48C;
+    padding: 10px;
+    
+}
+nav article {
+    height: 80px;
+    list-style-type: none;
+    background-color: steelblue;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0,0,0,0.24);
+    /* Box shadow Hentet fra W3schools.com*/
+}
+nav li:hover {
+    background-color: rgb(96, 180, 70);
+}
+header {
+    background-color :#333333;
+    height: 100px;
+}
+.search {
+    background-color: #D9D9D9;
+    float: left;
+    width: 80%;
+    margin-left: 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+.search i {
+    background-color: #D9D9D9;
+    font-size: 24px;
+    padding-top: 10px;
+}
+.search .field {
+    float:left;
+    width: 90%;
+}
+.search input {
+    font-size: 30px;
+    width: 100%;
+    background-color: #D9D9D9;
+}
+.search form {
+    width: 100%;
+
+}
+.icon   {
+    background-color: #D9D9D9;
+    padding: 10px;
+    float: left;
+    width: 10%;
+    margin-left: 5px;
+    height: 42px;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 30px;
+}
+main {
+    width: 75%;
+    float: left;
+    padding: 15px;
+    background-color: #FFFFFF;
+}
+footer {
+    text-align: center;
+    padding: 4px;
+    font-size: x-large;
+    background-color:#B87333;
+}
+@media (max-width: 1200px) {
+    .row, .column {
+        flex: 48%;
+    }
+    .col2 {
+        flex:100%
+    }
+}
+@media (max-width: 768px) {
+    .row, .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .flex-container article {
+        margin: 10px;
+    }
+    main {
+        width: 95%;
+    }
+    nav {
+        width: 95%;
+        height: auto;
+    }
+    nav article {
+        width: 45%;
+        float: left;
+        margin-left: 2%;
+        margin-top: 2%;
+    }
+    header {
+        height: 120px;
+    }
+    .icon, .search {
+        margin-top: 50px;
+    }
+    
+}
+
+
